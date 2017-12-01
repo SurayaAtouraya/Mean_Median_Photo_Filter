@@ -44,7 +44,7 @@ Sample run 3 (Median filter):
 # How to Run:
 
 To use the program on Linux:
-1) Download the folder "Photo_Filter_Program".
+1) Download the "filter.h","main.c" and "makefile" files.
 2) cd inside the file using the Linux terminal.
 3) Type "make". The executable "denoise" should now be created.
 4) Execute the file with the execution prototype "./denoise input_file output_file N F".
@@ -52,3 +52,5 @@ To use the program on Linux:
 NOTE: Make sure the photo you are using for the program is a PPM file, to convert an image to a PPM file use imagemagick by typing "convert -compress none image_to_convert new_ppm_file.ppm" in the terminal.
 
 NOTE: If you do not have Imagemagick use "sudo apt-get install imagemagick" to install it.
+
+NOTE: Make sure makefile does not have .txt in the name.
