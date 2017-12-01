@@ -1,0 +1,5 @@
+OBJS = main.c
+denoise: $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $?
+clean:
+	rm denoise
