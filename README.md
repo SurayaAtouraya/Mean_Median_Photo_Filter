@@ -45,7 +45,6 @@ Sample run 3 (Median filter):
 
 To use the program on Linux:
 1) Download the "filter.h","main.c" and "makefile" files.
-2) cd inside the file using the Linux terminal.
 3) Type "make". The executable "denoise" should now be created.
 4) Execute the file with the execution prototype "./denoise input_file output_file N F".
 
