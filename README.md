@@ -27,11 +27,11 @@ Sample run 1 (Improper arguments):
     
 Sample run 2 (Mean filter):
     
-    ./denoise ein.ppm einnew.ppm 3 A                    //A mean filter using window size 3x3
+    ./denoise ein.ppm einnew.ppm 7 A                    //A mean filter using window size 7x7
     *** ein.ppm read 1.4e-01 seconds 
     *** ein.ppm processed in 1.4e-01 seconds 
     *** einnew.ppm written in 1.1e-01 seconds
-[Original Input File](https://i.imgur.com/eTJzlOW.png) vs. [New Output File](https://i.imgur.com/GHcXfxH.png)
+[Original Input File](https://i.imgur.com/eTJzlOW.png) vs. [New Output File](https://i.imgur.com/ZKsJQvO.jpg)
 
 Sample run 3 (Median filter):
 
@@ -44,12 +44,12 @@ Sample run 3 (Median filter):
 # How to Run:
 
 To use the program on Linux:
-1) Download the "filter.h","main.c" and "makefile" files.
-3) Type "make". The executable "denoise" should now be created.
-4) Execute the file with the execution prototype "./denoise input_file output_file N F".
+1) Download the "filter.h","main.c" and "makefile" files. Make sure they are in the same directory.
+3) Type "make" in the terminal while being in the same directory as the files. The executable "denoise" should now be created.
+4) Execute the file with the execution prototype "./denoise input_file output_file N F", inputting your values.
 
 NOTE: Make sure the photo you are using for the program is a PPM file, to convert an image to a PPM file use imagemagick by typing "convert -compress none image_to_convert new_ppm_file.ppm" in the terminal.
 
 NOTE: If you do not have Imagemagick use "sudo apt-get install imagemagick" to install it.
 
-NOTE: Make sure makefile does not have .txt in the name.
+NOTE: Make sure the makefile does not have .txt in the name.
